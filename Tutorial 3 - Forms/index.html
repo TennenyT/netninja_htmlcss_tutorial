@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <!--User Input, id's unique, type is type of user input, name for server side processing-->
+    <form>
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username"placeholder="Enter username here" required >
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email"placeholder="Enter email here" required>
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password"placeholder="Enter password here" required>
+
+        <br><br><br>
+        <!--Radio Buttons, name used to link options (if one selected another with same name cannot be)
+        id used for labels like with user input, values are for server side and javascript-->
+        <h3>Select your age range:</h3>
+        <input type="radio" name="age" value="0-25" id="option_one">
+        <label for="option_one">0-25</label>
+        <br><br>
+        <input type="radio" name="age" value="26-50" id="option_two">
+        <label for="option_two">26-50</label>
+        <br><br>
+        <input type="radio" name="age" value="51+" id="option_three">
+        <label for="option_three">51+</label>
+
+        <br><br><br>
+        <label for="question">Security Questions: </label>
+        <select name="question" id="question">
+            <option value="Q1">What color are your favourite pair of socks?</option>
+            <option value="Q2">What Final Fantasy 14 Race would you marry?</option>
+            <option value="Q3">Why are you gay?</option>
+        </select>
+        <br><br>
+        <label for="answer">Security Question Answer: </label>
+        <input type="text" id="answer" name="answer">
+
+        <br><br><br>
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About you..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit the form">
+    </form>
+</body>
+</html>
