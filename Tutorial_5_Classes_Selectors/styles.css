@@ -1,0 +1,43 @@
+main{
+    font-size: 20px;
+}
+
+/*div.error{
+    color: red;
+}
+
+p.success{
+    color: rgb(42, 185, 42)
+}
+
+p.success.feedback{
+    border: 1px dashed rgb(42, 185, 42);
+}
+
+#content{
+    background-color: #ebebeb;
+    padding: 100px;
+}*/
+
+/*Targets only p tags who are children of div tags*/
+/*Can also chain them so a's inside of p's inside of div's for example (div p a{styles}*/
+/*Also classes can be used (div .{classname} targets elements of {classname} inside div's. Different to div.{classname}*/
+div p{
+    color: red;
+}
+
+/*a[href] targets any href, a[href={value}] targets any href equalling {value}, a[href*={value}] targets href with value in name */
+a[href*="google"]{
+    background-color: #3dd13d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*$ = ends in*/
+a[href$=".com"]{
+    color: white;
+    background: red;
+    border: 2px solid blue;
+}
